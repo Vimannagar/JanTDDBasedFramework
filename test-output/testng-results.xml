@@ -2,64 +2,64 @@
 <testng-results ignored="2" total="11" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-09T08:45:04 IST" name="Suite" finished-at="2023-05-09T08:45:22 IST" duration-ms="17430">
+  <suite started-at="2023-05-10T08:28:40 IST" name="Suite" finished-at="2023-05-10T08:28:57 IST" duration-ms="16329">
     <groups>
     </groups>
-    <test started-at="2023-05-09T08:45:04 IST" name="Test" finished-at="2023-05-09T08:45:22 IST" duration-ms="17430">
+    <test started-at="2023-05-10T08:28:40 IST" name="Test" finished-at="2023-05-10T08:28:57 IST" duration-ms="16329">
       <class name="testclasses.SearchTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-09T08:44:49 IST" name="initBrowser" finished-at="2023-05-09T08:45:04 IST" duration-ms="15809" status="PASS">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-10T08:28:26 IST" name="initBrowser" finished-at="2023-05-10T08:28:40 IST" duration-ms="13973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-09T08:45:05 IST" name="createObject" finished-at="2023-05-09T08:45:05 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-10T08:28:40 IST" name="createObject" finished-at="2023-05-10T08:28:40 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="verifyTitle()[pri:1, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-09T08:45:05 IST" name="verifyTitle" finished-at="2023-05-09T08:45:05 IST" duration-ms="36" status="PASS">
+        <test-method signature="verifyTitle()[pri:1, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-10T08:28:40 IST" name="verifyTitle" finished-at="2023-05-10T08:28:40 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method signature="searchProduct()[pri:2, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-09T08:45:05 IST" name="searchProduct" finished-at="2023-05-09T08:45:05 IST" duration-ms="249" status="PASS">
+        <test-method signature="searchProduct()[pri:2, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-10T08:28:40 IST" name="searchProduct" finished-at="2023-05-10T08:28:41 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method signature="validateSearchResults()[pri:3, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-09T08:45:05 IST" name="validateSearchResults" finished-at="2023-05-09T08:45:09 IST" duration-ms="3674" status="PASS">
+        <test-method signature="validateSearchResults()[pri:3, instance:testclasses.SearchTest@5824a83d]" started-at="2023-05-10T08:28:41 IST" name="validateSearchResults" finished-at="2023-05-10T08:28:44 IST" duration-ms="3268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSearchResults -->
       </class> <!-- testclasses.SearchTest -->
       <class name="testclasses.SpiritsTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-09T08:45:09 IST" name="createObject" finished-at="2023-05-09T08:45:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-10T08:28:44 IST" name="createObject" finished-at="2023-05-10T08:28:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="selectProduct()[pri:4, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-09T08:45:09 IST" name="selectProduct" finished-at="2023-05-09T08:45:10 IST" duration-ms="1219" status="PASS">
+        <test-method signature="selectProduct()[pri:4, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-10T08:28:44 IST" name="selectProduct" finished-at="2023-05-10T08:28:45 IST" duration-ms="1160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProduct -->
-        <test-method signature="sortByHighPrice()[pri:5, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-09T08:45:10 IST" name="sortByHighPrice" finished-at="2023-05-09T08:45:14 IST" duration-ms="4479" status="PASS">
+        <test-method signature="sortByHighPrice()[pri:5, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-10T08:28:45 IST" name="sortByHighPrice" finished-at="2023-05-10T08:28:50 IST" duration-ms="4334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByHighPrice -->
-        <test-method signature="sortByAlphabet()[pri:6, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-09T08:45:14 IST" name="sortByAlphabet" finished-at="2023-05-09T08:45:18 IST" duration-ms="3872" status="PASS">
+        <test-method signature="sortByAlphabet()[pri:6, instance:testclasses.SpiritsTest@791f145a]" started-at="2023-05-10T08:28:50 IST" name="sortByAlphabet" finished-at="2023-05-10T08:28:53 IST" duration-ms="3356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByAlphabet -->
       </class> <!-- testclasses.SpiritsTest -->
       <class name="testclasses.AddToCartTest">
-        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-09T08:45:18 IST" name="createObject" finished-at="2023-05-09T08:45:18 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="createObject()[pri:0, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-10T08:28:53 IST" name="createObject" finished-at="2023-05-10T08:28:53 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createObject -->
-        <test-method signature="selectItem()[pri:7, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-09T08:45:18 IST" name="selectItem" finished-at="2023-05-09T08:45:19 IST" duration-ms="1243" status="PASS">
+        <test-method signature="selectItem()[pri:7, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-10T08:28:53 IST" name="selectItem" finished-at="2023-05-10T08:28:55 IST" duration-ms="1610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectItem -->
-        <test-method signature="verifyAddToCart()[pri:8, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-09T08:45:19 IST" name="verifyAddToCart" finished-at="2023-05-09T08:45:20 IST" duration-ms="162" status="PASS">
+        <test-method signature="verifyAddToCart()[pri:8, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-10T08:28:55 IST" name="verifyAddToCart" finished-at="2023-05-10T08:28:55 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddToCart -->
-        <test-method signature="searchOnCartPage()[pri:9, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-09T08:45:20 IST" name="searchOnCartPage" finished-at="2023-05-09T08:45:22 IST" duration-ms="2231" status="PASS">
+        <test-method signature="searchOnCartPage()[pri:9, instance:testclasses.AddToCartTest@38cee291]" started-at="2023-05-10T08:28:55 IST" name="searchOnCartPage" finished-at="2023-05-10T08:28:57 IST" duration-ms="1822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchOnCartPage -->

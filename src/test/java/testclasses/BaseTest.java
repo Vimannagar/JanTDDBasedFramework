@@ -1,5 +1,7 @@
 package testclasses;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -9,6 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import pages.AddToCart;
 import pages.Search;
 import pages.Spirit;
+import utility.ReadProp;
 
 public class BaseTest {
 	
@@ -21,13 +24,13 @@ Spirit spirit;
 AddToCart addtocart;
 	
 	@BeforeSuite
-	public void initBrowser()
+	public void initBrowser() throws IOException
 	{
 		 driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
 		
-		driver.get("https://livingliquidz.com/");
+		driver.get(ReadProp.getPropData("url"));
 	}
 	
 	
