@@ -15,7 +15,7 @@ import utility.ReadProp;
 
 public class BaseTest {
 	
-static WebDriver driver;
+public static WebDriver driver;
 
 Search search;
 

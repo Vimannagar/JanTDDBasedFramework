@@ -35,7 +35,7 @@ public class AddToCart {
 	   })
 	WebElement applybutton;
 
-	@FindBy(xpath = "//*[text()='ADD TO CART']")
+	@FindBy(xpath = "//*[text()='ADD TO CART123']")
 	WebElement addtocartbutton;
 
 	@FindBy(xpath = "//*[@class='typeahead__list']//span[@class='title']")
