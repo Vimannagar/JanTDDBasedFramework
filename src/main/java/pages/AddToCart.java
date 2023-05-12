@@ -17,14 +17,14 @@ public class AddToCart {
 	WebDriver driver;
 	WebDriverWait wait;
 	@FindBy(xpath = "//*[@id='term-656']")
-	WebElement amrutcheckbox;
+	private WebElement amrutcheckbox;
 
 	@FindBys({
 		@FindBy(xpath = "//*[@id='flush-5']"),
 		@FindBy(xpath = "//*[@id='term-5']")
 	
 	})
-	WebElement size;
+	private WebElement size;
 	
 //	@FindBy(xpath = "//*[@id='term-5']")
 //	WebElement size;
@@ -33,16 +33,16 @@ public class AddToCart {
 	   @FindBy(xpath = "//*[text()='APPLY']")
 	, @FindBy(xpath = "//*[text()='APPLYButton']")
 	   })
-	WebElement applybutton;
+	private WebElement applybutton;
 
 	@FindBy(xpath = "//*[text()='ADD TO CART123']")
-	WebElement addtocartbutton;
+	private WebElement addtocartbutton;
 
 	@FindBy(xpath = "//*[@class='typeahead__list']//span[@class='title']")
-	List<WebElement> searchresults;
+	private List<WebElement> searchresults;
 
 	@FindBy(xpath = "//*[@class='wbr-main-search']")
-	WebElement searchbox;
+	private WebElement searchbox;
 
 	public AddToCart(WebDriver driver) {
 		this.driver = driver;

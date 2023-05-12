@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -26,7 +27,14 @@ AddToCart addtocart;
 	@BeforeSuite
 	public void initBrowser() throws IOException
 	{
+		if(ReadProp.getPropData("browser").equals("Chrome"))
+		{
 		 driver = new ChromeDriver();
+		}
+		else if(ReadProp.getPropData("browser").equals("Firefox"))
+		{
+			driver = new FirefoxDriver();
+		}
 		
 		driver.manage().window().maximize();
 		
