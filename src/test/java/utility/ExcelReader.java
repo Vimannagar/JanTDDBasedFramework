@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
@@ -43,7 +44,7 @@ String path = System.getProperty("user.dir")+"\\TestData.xlsx";
 		
 	}
 	
-	public void readAllData() throws IOException
+	public static String readData(int row, int column) throws IOException
 	{
 String path = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\TestData.xlsx";
 		
@@ -61,23 +62,13 @@ String path = System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\
 		
 		XSSFSheet sh1 = wb.getSheetAt(0);
 		
-		int rowcount = sh1.getLastRowNum()+1;
+		DataFormatter df = new DataFormatter();
 		
-		System.out.println("Total number of rows "+ rowcount);
-		
-		int columncount = sh1.getRow(1).getLastCellNum();
-	
-		System.out.println("Total number of columns are "+columncount);
+String value = df.formatCellValue(sh1.getRow(row).getCell(column));
 		
 		
-		for(int i=0; i<rowcount; i++)
-		{
-			for(int j=0; j<columncount; j++)
-			{
-				String data= sh1.getRow(i).getCell(j).getStringCellValue();
-				System.out.println(data);
-			}
-		}
+		return value;
+		
 		
 	}
 	

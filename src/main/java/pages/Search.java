@@ -40,7 +40,6 @@ public class Search {
 
 	public void getSearchResults() {
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(searchresults));
-
 		List<WebElement> searchresult = driver.findElements(searchresults);
 
 		WebElement optedvalue = null;

@@ -37,5 +37,12 @@ WebDriver driver;
 		sel.selectByVisibleText(visible);
 		
 	}
+	
+	public String getCurrentUrlOfPage()
+	{
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		return url;
+	}
 
 }

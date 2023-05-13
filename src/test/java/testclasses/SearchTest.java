@@ -1,7 +1,11 @@
 package testclasses;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import utility.ExcelReader;
 
 public class SearchTest extends BaseTest
 {
@@ -18,9 +22,9 @@ public class SearchTest extends BaseTest
 	}
 	
 	@Test(priority = 2)
-	public void searchProduct()
+	public void searchProduct() throws IOException
 	{
-		search.searchItems("Malt");
+		search.searchItems(ExcelReader.readData(3, 0));
 	}
 	
 	

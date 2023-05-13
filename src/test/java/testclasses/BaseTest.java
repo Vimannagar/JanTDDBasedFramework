@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -27,16 +28,26 @@ AddToCart addtocart;
 	@BeforeSuite
 	public void initBrowser() throws IOException
 	{
+		ChromeOptions options = new ChromeOptions();
+		
+//		options.addArguments("start-maximized");
+		
+		options.addArguments("window-size=1400,3468");
+		
+//		options.addArguments("--incognito");
+		
+		options.addArguments("--Headless");
+				
 		if(ReadProp.getPropData("browser").equals("Chrome"))
 		{
-		 driver = new ChromeDriver();
+		 driver = new ChromeDriver(options);
 		}
 		else if(ReadProp.getPropData("browser").equals("Firefox"))
 		{
 			driver = new FirefoxDriver();
 		}
 		
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		
 		driver.get(ReadProp.getPropData("url"));
 	}
